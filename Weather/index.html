@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEATHER</title>
+    <link rel="shortcut icon" href="images/rainy.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,600&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!-- or -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+    <div class="loader-container" id="loader">
+        <div class="loader"></div>
+        <p id="loadp">Loading...</p>
+    </div>
+    <div class="data-container" id="data" style="display: none;">
+        <header>
+            <div class="logo">
+                <img src="images/whiteLogo.png" id="imageLogo" alt="">
+            </div>
+            <div class="searchBar">
+                <span class="searchIcon"><i class="ri-search-line searchIcon"></i></span>
+                <form class="weatherSearch">
+                    <input type="text" placeholder="Enter Location" class="cityName">
+                </form>
+            </div>
+            <div class="setting">
+                <p class="degree" id="celsus">&#xb0;C</p>
+                <p class="degree" id="frahtine">&#xb0;F</p>
+                <a href=""><i class="bx bx-sun settingMenu" id="icon"></i></a>
+            </div>
+        </header>
+        <section class="container">
+            <div class="leftContainer">
+                <div class="leftUp">
+                    <h3>Now</h3>
+                    <div class="leftCImage">
+                        <h2 id="temp">19 C</h2>
+                        <img src="/images/01d.png" id="weatherIcon" alt="">
+                    </div>
+                    <h3 id="skyDescription">Clear</h3>
+                </div>
+                <div class="leftLow">
+                    <div class="cal-city">
+                        <i class="ri-calendar-line"></i>
+                        <p class="calendar">Friday 16,February</p>
+                    </div>
+                    <div class="cal-city">
+                        <i class="ri-map-pin-2-line"></i>
+                        <p class="city">Mumbai, Maharashtra</p>
+                    </div>
+                </div>
+            </div>
+            <div class="rightContainer">
+                <div class="contentBox">
+                    <p>Pressure</p>
+                    <div class="insideContent">
+                        <h1><i class="ri-slow-down-line"></i></h1>
+                        <h2 id="Pressure">43%</h2>
+                    </div>
+                </div>
+                <div class="contentBox">
+                    <p>Wind Status</p>
+                    <div class="insideContent">
+                        <h1><i class="ri-windy-line"></i></i></h1>
+                        <h2 id="windStatus">43%</h2>
+                    </div>
+                </div>
+                <div class="contentBox">
+                    <p>Sunrise & Sunset</p>
+                    <div class="insideContent sunRise">
+                        <div class="sun_moon">
+                        <p><i class="ri-sun-line"></i></p>
+                        <p id="sunRise">6:30</p>
+                        </div>
+                        <div class="sun_moon">
+                        <p><i class="ri-moon-line"></i></p>
+                        <p id="sunSet">6:30</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contentBox">
+                    <p>Humidity</p>
+                    <div class="insideContent">
+                        <h1><i class="ri-water-percent-line"></i></h1>
+                        <h2 id="Humidity">43%</h2>
+                    </div>
+                </div>
+                <div class="contentBox">
+                    <p>Visibility</p>
+                    <div class="insideContent">
+                        <h1><i class="ri-eye-line"></i></h1>
+                        <h2 id="Visibility">43%</h2>
+                    </div>
+                </div>
+                <div class="contentBox">
+                    <p>Feels Like</p>
+                    <div class="insideContent">
+                        <h1><i class="ri-temp-hot-fill"></i></h1>
+                        <h2 id="Feels">43%</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+</body>
+
+
+<script src="https://momentjs.com/downloads/moment.js"></script>
+<script src="script.js"></script>
+
+</html>
